@@ -1,0 +1,30 @@
+@import "fonts.scss";
+@import "visually-hidden.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/first-screen.scss";
+@import "blocks/button.scss";
+@import "blocks/categories.scss";
+@import "blocks/category.scss";
+@import "blocks/advantages.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/catalog.scss";
+@import "blocks/show-more-block.scss";
+@import "blocks/product-card.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  line-height: 18px;
+  font-weight: 500;
+
+  background-color: #fff;
+}

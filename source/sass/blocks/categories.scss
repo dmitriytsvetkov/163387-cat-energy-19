@@ -1,0 +1,13 @@
+.categories {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.categories__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
