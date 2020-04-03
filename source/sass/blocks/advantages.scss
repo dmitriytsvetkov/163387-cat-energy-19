@@ -22,10 +22,10 @@
 .advantages__item {
   position: relative;
   margin: 0 0 26px 0;
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.advantages__item:last-child {
+  margin-bottom: 0;
 }
 
 .advantages__item::before {
@@ -56,7 +56,7 @@
 
 .advantages__text {
   width: 200px;
+  color: #444444;
   padding: 0 0 0 80px;
   margin: 0;
-  color: #444444;
 }
