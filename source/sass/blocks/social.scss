@@ -19,13 +19,16 @@
   display: block;
   background-repeat: no-repeat;
   background-position: center center;
-  &--vk {
-    background-image: url("../../img/icon-vk.svg");
-  }
-  &--inst {
-    background-image: url("../../img/icon-insta.svg");
-  }
-  &--fb {
-    background-image: url("../../img/icon-fb.svg");
-  }
+}
+
+.social__link--vk {
+  background-image: url("../../img/icon-vk.svg");
+}
+
+.social__link--inst {
+  background-image: url("../../img/icon-insta.svg");
+}
+
+.social__link--fb {
+  background-image: url("../../img/icon-fb.svg");
 }
