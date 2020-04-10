@@ -8,12 +8,52 @@
 }
 
 .page-footer__title {
-  display: block;
-  padding: 15px 0;
+  display: flex;
+  align-items: center;
   margin: 0;
+  min-height: 94px;
 }
 
 .page-footer__title img {
   display: block;
   margin: 0 auto;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  min-height: 78px;
+}
+
+.page-footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    min-height: 150px;
+  }
+
+  .page-footer__title {
+    min-width: 160px;
+  }
+
+  .page-footer__title img {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    min-width: 160px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-footer__wrapper {
+    width: 1220px;
+  }
 }
