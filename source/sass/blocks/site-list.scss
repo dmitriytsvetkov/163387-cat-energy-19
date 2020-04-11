@@ -12,3 +12,17 @@
   border-bottom: 1px solid #e6e6e6;
   padding: 23px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item a {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

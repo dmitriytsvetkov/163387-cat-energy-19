@@ -11,3 +11,25 @@
   padding: 0;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .categories {
+    width: 708px;
+    margin-bottom: 50px;
+  }
+
+  .categories__list {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    width: 1220px;
+    margin-bottom: 85px;
+  }
+
+  .categories__list {
+    justify-content: space-between;
+  }
+}
