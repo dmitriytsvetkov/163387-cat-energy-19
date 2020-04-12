@@ -50,16 +50,17 @@
   }
 
   .page-header__logo-img {
-    width: 70px;
-    height: 61px;
-    margin-right: 20px;
+    width: 173px;
+    height: 60px;
+  }
+
+  .page-header__logo-img img {
+    width: 173px;
+    height: 60px;
   }
 
   .page-header__logo-text {
-    position: static;
-    transform: none;
-    width: 87px;
-    height: 18px;
+    display: none;
   }
 
   .page-header__top-wrapper {
@@ -71,9 +72,13 @@
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     @include desktop-wrapper-width();
+  }
+
+  .page-header__wrapper--index {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
   }
 
   .page-header__logo {
@@ -85,12 +90,16 @@
   }
 
   .page-header__logo-img {
-    width: 72px;
+    width: 202px;
+    height: 60px;
+  }
+
+  .page-header__logo-img img {
+    width: 202px;
     height: 60px;
   }
 
   .page-header__logo-text {
-    width: 120px;
-    height: 22px;
+    display: none;
   }
 }

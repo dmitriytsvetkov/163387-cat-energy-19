@@ -29,3 +29,9 @@
 .social__link--fb {
   background-image: url("../../img/icon-fb.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
+}
