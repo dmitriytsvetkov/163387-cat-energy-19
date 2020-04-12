@@ -7,8 +7,8 @@
 .product-card__content {
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
   margin: 0 auto;
+  @include mobile-wrapper-width();
 }
 
 .product-card img {

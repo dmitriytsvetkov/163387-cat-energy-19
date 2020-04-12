@@ -1,21 +1,19 @@
 .categories {
-  width: 280px;
   margin: 0 auto;
+  @include mobile-wrapper-width();
 }
 
 .categories__list {
   display: flex;
-  list-style: none;
-  width: 280px;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+  @include list-reset();
+  @include mobile-wrapper-width();
 }
 
 @media (min-width: $tablet-width) {
   .categories {
-    width: 708px;
     margin-bottom: 50px;
+    @include tablet-wrapper-width();
   }
 
   .categories__list {
@@ -25,8 +23,8 @@
 
 @media (min-width: $desktop-width) {
   .categories {
-    width: 1220px;
     margin-bottom: 85px;
+    @include desktop-wrapper-width();
   }
 
   .categories__list {

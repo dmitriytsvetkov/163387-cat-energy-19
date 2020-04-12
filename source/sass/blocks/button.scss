@@ -9,9 +9,9 @@
   text-decoration: none;
   padding: 11px 0;
   display: block;
-  width: 280px;
   text-align: center;
   border: none;
+  @include mobile-wrapper-width();
 }
 
 .button--color--grey {

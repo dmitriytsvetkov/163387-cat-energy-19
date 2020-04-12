@@ -9,8 +9,8 @@
 }
 
 .first-screen__wrapper {
-  width: 280px;
   margin: 0 auto;
+  @include mobile-wrapper-width();
 }
 
 .first-screen__title {
@@ -45,7 +45,7 @@
   }
 
   .first-screen__wrapper {
-    width: 708px;
+    @include tablet-wrapper-width();
   }
 
   .first-screen__title {
@@ -83,7 +83,7 @@
   }
 
   .first-screen__wrapper {
-    width: 1220px;
+    @include desktop-wrapper-width();
   }
 
   .first-screen__title {
