@@ -1,9 +1,9 @@
 .category {
+  @include mobile-wrapper-width();
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
   background-color: #f2f2f2;
-  @include mobile-wrapper-width();
 }
 
 .category__wrapper {
@@ -59,10 +59,10 @@
 
 @media (min-width: $tablet-width) {
   .category {
+    @include tablet-wrapper-width();
     align-items: start;
     min-height: 372px;
     margin-bottom: 30px;
-    @include tablet-wrapper-width();
   }
 
   .category__wrapper {

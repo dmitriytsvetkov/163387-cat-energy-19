@@ -1,7 +1,7 @@
 .advantages {
+  @include mobile-wrapper-width();
   min-height: 415px;
   margin: 0 auto;
-  @include mobile-wrapper-width();
 }
 
 .advantages__title {
@@ -62,8 +62,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    min-height: 730px;
     @include tablet-wrapper-width();
+    min-height: 730px;
   }
 
   .advantages__title {
@@ -95,8 +95,8 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    min-height: 440px;
     @include desktop-wrapper-width();
+    min-height: 440px;
   }
 
   .advantages__list {

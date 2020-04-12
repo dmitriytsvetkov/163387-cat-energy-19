@@ -5,9 +5,9 @@
 }
 
 .social__list {
+  @include list-reset();
   display: flex;
   justify-content: center;
-  @include list-reset();
 }
 
 .social__link {

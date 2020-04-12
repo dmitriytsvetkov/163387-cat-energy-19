@@ -9,8 +9,8 @@
 }
 
 .first-screen__wrapper {
-  margin: 0 auto;
   @include mobile-wrapper-width();
+  margin: 0 auto;
 }
 
 .first-screen__title {

@@ -37,12 +37,12 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
+    @include tablet-wrapper-width();
     display: flex;
     justify-content: space-between;
     min-height: 100px;
     margin: 0 auto;
     border: none;
-    @include tablet-wrapper-width();
   }
 
   .page-header__logo {
@@ -70,10 +70,10 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
+    @include desktop-wrapper-width();
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    @include desktop-wrapper-width();
   }
 
   .page-header__logo {

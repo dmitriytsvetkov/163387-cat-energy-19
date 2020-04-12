@@ -3,8 +3,8 @@
 }
 
 .page-footer__wrapper {
-  margin: 0 auto;
   @include mobile-wrapper-width();
+  margin: 0 auto;
 }
 
 .page-footer__title {
@@ -33,10 +33,10 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
+    @include tablet-wrapper-width();
     display: flex;
     justify-content: space-between;
     min-height: 150px;
-    @include tablet-wrapper-width();
   }
 
   .page-footer__title {

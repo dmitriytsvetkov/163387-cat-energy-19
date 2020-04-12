@@ -15,8 +15,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    margin: 0 auto;
     @include tablet-wrapper-width();
+    margin: 0 auto;
   }
 
   .catalog__title {

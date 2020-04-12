@@ -1,4 +1,5 @@
 .button {
+  @include mobile-wrapper-width();
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -11,7 +12,6 @@
   display: block;
   text-align: center;
   border: none;
-  @include mobile-wrapper-width();
 }
 
 .button--color--grey {

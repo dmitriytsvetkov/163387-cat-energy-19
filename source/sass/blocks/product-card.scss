@@ -5,10 +5,10 @@
 }
 
 .product-card__content {
+  @include mobile-wrapper-width();
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  @include mobile-wrapper-width();
 }
 
 .product-card img {
