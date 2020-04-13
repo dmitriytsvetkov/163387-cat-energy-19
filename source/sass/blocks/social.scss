@@ -1,16 +1,13 @@
 .social {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  padding: 20px 0;
-  margin-bottom: 30px;
+  padding: 22px 0;
 }
 
 .social__list {
+  @include list-reset();
   display: flex;
-  list-style: none;
   justify-content: center;
-  padding: 0;
-  margin: 0;
 }
 
 .social__link {
@@ -31,4 +28,10 @@
 
 .social__link--fb {
   background-image: url("../../img/icon-fb.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
 }

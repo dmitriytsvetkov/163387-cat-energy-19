@@ -1,13 +1,33 @@
 .categories {
-  width: 280px;
+  @include mobile-wrapper-width();
   margin: 0 auto;
 }
 
 .categories__list {
+  @include list-reset();
+  @include mobile-wrapper-width();
   display: flex;
-  list-style: none;
-  width: 280px;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    @include tablet-wrapper-width();
+    margin-bottom: 50px;
+  }
+
+  .categories__list {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    @include desktop-wrapper-width();
+    margin-bottom: 85px;
+  }
+
+  .categories__list {
+    justify-content: space-between;
+  }
 }
