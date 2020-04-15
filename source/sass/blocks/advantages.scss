@@ -1,6 +1,5 @@
 .advantages {
   @include mobile-wrapper-width();
-  min-height: 415px;
   margin: 0 auto;
 }
 
@@ -16,6 +15,7 @@
 
 .advantages__list {
   @include list-reset();
+  margin: 0 0 45px 0;
 }
 
 .advantages__item {
