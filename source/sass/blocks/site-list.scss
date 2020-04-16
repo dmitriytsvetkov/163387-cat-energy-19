@@ -14,9 +14,18 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    justify-content: space-between;
+    width: 450px;
   }
 
   .site-list__item a {
+    padding: 13px 0 8px 0;
+    font-size: 18px;
+    line-height: 24px;
     border: none;
+  }
+
+  .site-list__item--active a {
+    border-bottom: 2px solid #68b738;
   }
 }

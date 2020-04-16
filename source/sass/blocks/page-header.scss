@@ -38,10 +38,10 @@
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     @include tablet-wrapper-width();
+    min-height: 0;
     display: flex;
     justify-content: space-between;
-    min-height: 100px;
-    margin: 0 auto;
+    margin: 22px auto 0 auto;
     border: none;
   }
 
@@ -64,6 +64,7 @@
   }
 
   .page-header__top-wrapper {
+    min-height: 0;
     width: 180px;
     border: none;
   }

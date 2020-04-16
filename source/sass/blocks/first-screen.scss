@@ -39,7 +39,7 @@
 @media (min-width: $tablet-width) {
   .first-screen {
     position: relative;
-    min-height: 810px;
+    min-height: 847px;
     background-image: none;
   }
 
@@ -54,7 +54,8 @@
 
   .first-screen__title {
     width: 430px;
-    margin-bottom: 45px;
+    margin-bottom: 41px;
+    margin-top: 58px;
     font-size: 60px;
     line-height: 60px;
     color: #111111;
@@ -62,7 +63,9 @@
   }
 
   .first-screen__slogan {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
     color: #111111;
     text-align: start;
   }
@@ -73,6 +76,13 @@
     top: 50%;
     transform: translateX(-50%);
     z-index: -1;
+  }
+
+  .first-screen__suggest-btn {
+    width: 245px;
+    padding: 16px 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
