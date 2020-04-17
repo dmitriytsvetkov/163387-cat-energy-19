@@ -29,3 +29,26 @@
     border-bottom: 2px solid #68b738;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 480px;
+  }
+
+  .site-list__item a {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .page-header__wrapper--index .site-list__item a {
+    color: #ffffff;
+  }
+
+  .site-list__item--active a {
+    border-bottom: 2px solid #68b738;
+  }
+
+  .page-header__wrapper--index .site-list__item--active a {
+    border-bottom: 2px solid #ffffff;
+  }
+}

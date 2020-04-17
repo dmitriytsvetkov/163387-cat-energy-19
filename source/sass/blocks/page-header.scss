@@ -73,6 +73,7 @@
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     @include desktop-wrapper-width();
+    margin-top: 53px;
   }
 
   .page-header__wrapper--index {

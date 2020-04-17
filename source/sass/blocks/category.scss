@@ -131,6 +131,29 @@
     display: flex;
     flex-wrap: wrap;
     width: 470px;
-    margin: 60px auto;
+    margin: 48px auto;
+  }
+
+  .category__icon-wrapper {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 98px;
+    height: 98px;
+    margin-right: 65px;
+  }
+
+  .category__title {
+    line-height: 100px;
+  }
+
+  .category__text {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .category__text br {
+    display: none;
   }
 }
