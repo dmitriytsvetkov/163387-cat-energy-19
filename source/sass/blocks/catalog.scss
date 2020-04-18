@@ -21,7 +21,9 @@
   }
 
   .catalog__title {
-    margin-bottom: 130px;
+    width: auto;
+    margin-top: 48px;
+    margin-bottom: 135px;
     font-size: 60px;
     text-align: start;
   }
@@ -37,5 +39,9 @@
 @media (min-width: $desktop-width) {
   .catalog {
     @include desktop-wrapper-width();
+  }
+
+  .catalog__title {
+    margin-top: 65px;
   }
 }
