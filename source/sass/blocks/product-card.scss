@@ -50,14 +50,13 @@
   width: 100%;
 }
 
-.product-card__field,
-.product-card__value {
+.product-card__table-val {
   width: 50%;
   padding: 0;
   line-height: 16px;
 }
 
-.product-card__value {
+.product-card__table-val--right-align {
   text-align: right;
 }
 
