@@ -24,7 +24,7 @@
 @media (min-width: $desktop-width) {
   .categories {
     @include desktop-wrapper-width();
-    margin-bottom: 85px;
+    margin-bottom: 75px;
   }
 
   .categories__list {

@@ -40,10 +40,10 @@
   content: "";
 
   position: absolute;
-  top: 32px;
-  right: 23px;
+  top: 31px;
+  right: 20px;
 
-  width: 18px;
+  width: 23px;
   height: 2px;
 
   background-color: #000000;
@@ -67,7 +67,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 450px;
+    width: 440px;
     margin: 0;
   }
 
@@ -79,5 +79,6 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 480px;
+    background-color: transparent;
   }
 }
