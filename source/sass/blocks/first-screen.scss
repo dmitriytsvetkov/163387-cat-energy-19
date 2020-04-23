@@ -44,12 +44,12 @@
 
 @media (min-width: $tablet-width) {
   .first-screen {
-    position: relative;
     min-height: 847px;
     background-image: none;
   }
 
   .first-screen__wrapper {
+    position: relative;
     @include tablet-wrapper-width();
   }
 
@@ -79,8 +79,10 @@
   .first-screen__img {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 260px;
     transform: translateX(-50%);
+    width: 709px;
+    height: 609px;
     z-index: -1;
   }
 
@@ -145,9 +147,11 @@
   }
 
   .first-screen__img {
-    top: 50%;
-    left: 55%;
-    transform: translate(-55%, -50%);
+    top: 20%;
+    left: 37%;
+    transform: none;
+    width: 552px;
+    height: 499px;
     z-index: 2;
   }
 

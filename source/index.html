@@ -45,7 +45,11 @@
           <div class="first-screen__content-wrapper">
             <h1 class="first-screen__title">Функциональное питание для котов</h1>
             <p class="first-screen__slogan">Занялся собой? Займись котом!</p>
-            <img class="first-screen__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="first-screen__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Картинка корма для кота">
+            </picture>
             <a class="first-screen__suggest-btn button" href="#">Подобрать программу</a>
           </div>
         </div>
@@ -57,7 +61,7 @@
           <li class="categories__item category">
             <div class="category__wrapper">
               <div class="category__icon-wrapper">
-                <img class="category__icon" src="img/icon-cat-slim.svg" width="16" height="16" alt="">
+                <img class="category__icon category__icon--seated" src="img/icon-cat-slim.svg" width="16" height="16" alt="">
               </div>
               <h3 class="category__title">Похудение</h3>
               <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -67,7 +71,7 @@
           <li class="categories__item category">
             <div class="category__wrapper">
               <div class="category__icon-wrapper">
-                <img class="category__icon" src="img/icon-cat-pro.svg" width="16" height="16" alt="">
+                <img class="category__icon category__icon--standing" src="img/icon-cat-pro.svg" width="16" height="16" alt="">
               </div>
               <h3 class="category__title">Набор массы</h3>
               <p class="category__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br/> мышцы!</p>
