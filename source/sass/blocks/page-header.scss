@@ -27,6 +27,7 @@
 }
 
 .page-header__img-container {
+  display: block;
   width: 280px;
   margin: 0 auto;
 }
@@ -45,9 +46,10 @@
     width: 192px;
   }
 
-  .page-header__logo-img {
+  .page-header__img-container {
     width: 173px;
     height: 60px;
+    margin: 0;
   }
 
   .page-header__logo-img img {
@@ -84,13 +86,12 @@
     width: 220px;
   }
 
-  .page-header__logo-img {
+  .page-header__img-container {
     width: 202px;
     height: 60px;
   }
 
-  .page-header__logo-img img {
+  .page-header__img-container img {
     width: 202px;
-    height: 60px;
   }
 }

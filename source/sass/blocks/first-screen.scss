@@ -49,8 +49,8 @@
   }
 
   .first-screen__wrapper {
-    position: relative;
     @include tablet-wrapper-width();
+    position: relative;
   }
 
   .first-screen__content-wrapper {
