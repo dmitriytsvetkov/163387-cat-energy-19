@@ -15,18 +15,33 @@
 
 .category__icon-wrapper {
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 1px solid #68b738;
   background-color: #68b738;
 }
 
-.category__icon {
+.category__icon-wrapper::before {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.category__icon-wrapper--seated::before {
+  top: -1px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../../img/icon-cat-slim.svg");
+}
+
+.category__icon-wrapper--standing::before {
+  top: 8px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../../img/icon-cat-pro.svg");
 }
 
 .category__title {
@@ -47,6 +62,10 @@
   margin: 20px 0 20px 0;
 }
 
+.category__text br {
+  display: none;
+}
+
 .category__link {
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
@@ -65,7 +84,7 @@
   content: "";
   width: 24px;
   height: 11px;
-  background-image: url(../../img/icon-right-arrow-long.svg);
+  background-image: url("../../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
 
@@ -94,6 +113,10 @@
     border: none;
   }
 
+  .category__text br {
+    display: block;
+  }
+
   .category__title {
     margin: 0;
     font-size: 36px;
@@ -106,6 +129,20 @@
     transform: translateY(-50%);
     width: 198px;
     height: 198px;
+  }
+
+  .category__icon-wrapper--seated::before {
+    top: -5px;
+    width: 140px;
+    height: 194px;
+    background-image: url("../../img/icon-cat-slim.svg");
+  }
+
+  .category__icon-wrapper--standing::before {
+    top: 47px;
+    width: 268px;
+    height: 112px;
+    background-image: url("../../img/icon-cat-pro.svg");
   }
 
   .category__link {
@@ -142,6 +179,20 @@
     width: 98px;
     height: 98px;
     margin-right: 65px;
+  }
+
+  .category__icon-wrapper--seated::before {
+    top: -5px;
+    width: 70px;
+    height: 97px;
+    background-image: url("../../img/icon-cat-slim.svg");
+  }
+
+  .category__icon-wrapper--standing::before {
+    top: 20px;
+    width: 134px;
+    height: 56px;
+    background-image: url("../../img/icon-cat-pro.svg");
   }
 
   .category__title {

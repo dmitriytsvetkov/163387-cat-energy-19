@@ -11,11 +11,12 @@
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--index">
         <div class="page-header__top-wrapper">
-          <a href="#" class="page-header__logo-img">
-            <img src="img/logo-mobile.svg" alt="" width="33" height="38">
-          </a>
-          <a href="#" class="page-header__logo-text">
-            <img src="img/logo-mobile.svg" alt="" width="101" height="18">
+          <a href="#" class="page-header__img-container">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="" width="190" height="38">
+            </picture>
           </a>
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -42,19 +43,21 @@
           <div class="first-screen__content-wrapper">
             <h1 class="first-screen__title">Функциональное питание для котов</h1>
             <p class="first-screen__slogan">Занялся собой? Займись котом!</p>
-            <img class="first-screen__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="first-screen__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Картинка корма для кота">
+            </picture>
             <a class="first-screen__suggest-btn button" href="#">Подобрать программу</a>
           </div>
         </div>
-
       </section>
       <section class="categories">
         <h2 class="visually-hidden">Наши категории</h2>
         <ul class="categories__list">
           <li class="categories__item category">
             <div class="category__wrapper">
-              <div class="category__icon-wrapper">
-                <img class="category__icon" src="img/icon-cat-slim.svg" width="16" height="16" alt="">
+              <div class="category__icon-wrapper category__icon-wrapper--seated">
               </div>
               <h3 class="category__title">Похудение</h3>
               <p class="category__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -63,11 +66,10 @@
           </li>
           <li class="categories__item category">
             <div class="category__wrapper">
-              <div class="category__icon-wrapper">
-                <img class="category__icon" src="img/icon-cat-pro.svg" width="16" height="16" alt="">
+              <div class="category__icon-wrapper category__icon-wrapper--standing">
               </div>
               <h3 class="category__title">Набор массы</h3>
-              <p class="category__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br/> мышцы!</p>
+              <p class="category__text">Заработать авторитет среди дворовых котов<br/> и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые<br/> мышцы!</p>
               <a href="#" class="category__link">Каталог Pro</a>
             </div>
           </li>

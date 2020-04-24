@@ -1,5 +1,6 @@
 .show-more-block {
   position: relative;
+  display: block;
   min-height: 210px;
   color: #444444;
   border: 1px solid #ededed;
@@ -87,13 +88,14 @@
   .show-more-block__show-more {
     width: 60px;
     height: 60px;
-    margin-top: 20px;
+    margin-top: 57px;
     margin-bottom: 50px;
   }
 
   .show-more-block__show-more::before {
     width: 60px;
   }
+
   .show-more-block__show-more::after {
     height: 60px;
   }
@@ -102,5 +104,9 @@
 @media (min-width: $desktop-width) {
   .show-more-block__show-all {
     width: 170px;
+  }
+
+  .show-more-block__show-more {
+    margin-top: 54px;
   }
 }
