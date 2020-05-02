@@ -37,7 +37,80 @@
       </nav>
     </div>
   </header>
+    <main class="page-main">
+      <form class="page-main__form main-form" action="https://echo.htmlacademy.ru" method="POST">
+        <h1 class="main-form__title">Подбор программы</h1>
+        <div class="main-form__wrapper">
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label">Имя:*
+              <input class="main-form__input" type="text" name="name" placeholder="Барсик" required>
+            </label>
+            <label class="main-form__label">
+              Вес (КГ):*
+              <input class="main-form__input" type="text" name="weight" placeholder="7" required>
+            </label>
+            <label class="main-form__label">
+              Возраст (Лет):
+              <input class="main-form__input" type="text" name="age" placeholder="7">
+            </label>
+          </fieldset>
+        </div>
+        <div class="main-form__wrapper main-form__wrapper--full-width">
+          <fieldset class="main-form__fieldset main-form__fieldset--radio">
+            <input class="main-form__input main-form__input--radio visually-hidden" type="radio" name="program" value="slim" id="slim" checked>
+            <label for="slim" class="main-form__label main-form__label--radio">Похудение</label>
+            <input class="main-form__input main-form__input--radio visually-hidden" type="radio" name="program" value="pro" id="pro">
+            <label for="pro" class="main-form__label main-form__label--radio" >Набор массы</label>
+            <input class="main-form__input main-form__input--radio visually-hidden" type="radio" name="program" value="idk" id="idk">
+            <label for="idk" class="main-form__label main-form__label--radio">Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+        </div>
+        <div class="main-form__wrapper">
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend main-form__legend--contacts">Контактные данные (владельца кота)</legend>
+            <div class="main-form__contacts-wrapper">
+              <label class="main-form__label main-form__label--email">
+                E-mail:*
+                <input class="main-form__input main-form__input--email" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+              </label>
+              <label class="main-form__label main-form__label--tel">
+                Телефон:*
+                <input class="main-form__input main-form__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend main-form__legend--comment">Комментарий</legend>
+            <textarea class="main-form__comment" name="comment" rows="10" cols="38" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__legend main-form__legend--additional">Дополнительно</legend>
+            <div class="main-form__fieldset-wrapper">
+              <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="additional-checkbox" value="sugar" id="sugar" checked>
+              <label class="main-form__label main-form__label--checkbox" for="sugar">Сахарозаменитель</label>
+              <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="additional-checkbox" value="water" id="water">
+              <label class="main-form__label main-form__label--checkbox" for="water">Питьевая вода</label>
+              <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="additional-checkbox" value="milk" id="milk">
+              <label class="main-form__label main-form__label--checkbox" for="milk">Молоко</label>
+              <input class="main-form__input main-form__input--checkbox visually-hidden" type="checkbox" name="additional-checkbox" value="vitamins" id="vitamins">
+              <label class="main-form__label main-form__label--checkbox" for="vitamins">Витамины</label>
+            </div>
+          </fieldset>
+          <div class="main-form__submit-section">
+            <button type="submit" class="default-btn main-form__btn-show">Отправить заявку</button>
+            <p class="main-form__required-fields">* — Обязательные поля</p>
+          </div>
+        </div>
+      </form>
+    </main>
     <footer class="page-footer">
+      <div class="page-footer__commercial commercial">
+        <h3 class="commercial__title">приглашаем к сотрудничеству дилеров!</h3>
+        <p class="commercial__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="page-footer__map">
+        <div class="page-footer__map-img"></div>
+      </div>
       <div class="page-footer__wrapper">
         <a class="page-footer__title">
           <img src="img/logo-footer.svg" alt="" width="128" height="24" class="page-footer__logo-img">
