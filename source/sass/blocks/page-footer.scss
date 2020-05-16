@@ -2,6 +2,12 @@
   background-color: #f2f2f2;
 }
 
+.page-footer__map {
+  width: 100%;
+  height: 362px;
+  background-color: #f2f2f2;
+}
+
 .page-footer__wrapper {
   @include mobile-wrapper-width();
   margin: 0 auto;
@@ -32,6 +38,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__map {
+    min-height: 396px;
+  }
+
   .page-footer__wrapper {
     @include tablet-wrapper-width();
     display: flex;
@@ -53,6 +63,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__map {
+    min-height: 400px;
+  }
+
   .page-footer__wrapper {
     @include desktop-wrapper-width();
   }

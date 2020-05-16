@@ -40,18 +40,19 @@
     <main class="page-main">
       <form class="page-main__form main-form" action="https://echo.htmlacademy.ru" method="POST">
         <h1 class="main-form__title">Подбор программы</h1>
-        <div class="main-form__wrapper">
+        <div class="main-form__wrapper main-form__wrapper--top">
+          <p class="main-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <fieldset class="main-form__fieldset">
-            <label class="main-form__label">Имя:*
-              <input class="main-form__input" type="text" name="name" placeholder="Барсик" required>
+            <label class="main-form__label main-form__label--text">Имя:*
+              <input class="main-form__input main-form__input--text" type="text" name="name" placeholder="Барсик" required>
             </label>
-            <label class="main-form__label">
+            <label class="main-form__label main-form__label--text">
               Вес (КГ):*
-              <input class="main-form__input" type="text" name="weight" placeholder="7" required>
+              <input class="main-form__input main-form__input--text" type="text" name="weight" placeholder="7" required>
             </label>
-            <label class="main-form__label">
+            <label class="main-form__label main-form__label--text">
               Возраст (Лет):
-              <input class="main-form__input" type="text" name="age" placeholder="7">
+              <input class="main-form__input main-form__input--text" type="text" name="age" placeholder="7">
             </label>
           </fieldset>
         </div>
@@ -97,7 +98,7 @@
             </div>
           </fieldset>
           <div class="main-form__submit-section">
-            <button type="submit" class="default-btn main-form__btn-show">Отправить заявку</button>
+            <button type="submit" class="button main-form__show-btn">Отправить заявку</button>
             <p class="main-form__required-fields">* — Обязательные поля</p>
           </div>
         </div>
@@ -105,8 +106,10 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__commercial commercial">
-        <h3 class="commercial__title">приглашаем к сотрудничеству дилеров!</h3>
-        <p class="commercial__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="commercial__wrapper">
+          <h3 class="commercial__title">приглашаем<br/> к сотрудничеству дилеров!</h3>
+          <p class="commercial__address"><span>ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</p>
+        </div>
       </div>
       <div class="page-footer__map">
         <div class="page-footer__map-img"></div>
