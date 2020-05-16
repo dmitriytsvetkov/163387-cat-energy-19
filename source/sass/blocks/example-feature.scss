@@ -76,8 +76,8 @@
   .example-feature:first-of-type {
     margin: 0;
   }
+
   .example-feature__text::before {
     background-color: transparent;
   }
-
 }
