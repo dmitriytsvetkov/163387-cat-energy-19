@@ -31,7 +31,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 }
 
@@ -41,6 +41,11 @@
   }
 
   .catalog__title {
+    padding-bottom: 22px;
     margin-top: 65px;
+  }
+
+  .catalog__list {
+    margin-bottom: 65px;
   }
 }

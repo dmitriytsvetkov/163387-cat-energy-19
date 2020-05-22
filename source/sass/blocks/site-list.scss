@@ -26,6 +26,14 @@
     border: none;
   }
 
+  .site-list__item a:hover {
+    opacity: 0.6;
+  }
+
+  .site-list__item a:active {
+    opacity: 0.3;
+  }
+
   .site-list__item--active a {
     border-bottom: 2px solid #68b738;
   }
