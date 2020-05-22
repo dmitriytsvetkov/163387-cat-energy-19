@@ -52,6 +52,14 @@
     margin: 0;
   }
 
+  .page-header__img-container:hover {
+    opacity: 0.8;
+  }
+
+  .page-header__img-container:active {
+    opacity: 0.6;
+  }
+
   .page-header__logo-img img {
     width: 173px;
     height: 60px;

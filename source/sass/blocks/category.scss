@@ -88,6 +88,16 @@
   background-repeat: no-repeat;
 }
 
+.category__link:hover::after {
+  right: -57px;
+  width: 34px;
+  background-image: url("../../img/icon-right-arrow-verylong.svg");
+}
+
+.category__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .category {
     @include tablet-wrapper-width();

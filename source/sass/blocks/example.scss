@@ -12,7 +12,7 @@
 
 .example__title-wrapper {
   width: 280px;
-  padding: 35px 0;
+  padding: 18px 0 21px 0;
   margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .example__container {
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 .example__text {
@@ -55,7 +55,7 @@
 }
 
 .example__slider {
-  width: 280px;
+  width: 310px;
   margin: 0 auto;
 }
 
@@ -72,7 +72,7 @@
 
   .example__title-wrapper {
     @include tablet-wrapper-width();
-    padding: 50px 0;
+    padding: 45px 0 63px 0;
   }
 
   .example__title {
@@ -86,6 +86,7 @@
 
   .example__text {
     width: 99%;
+    margin-bottom: 51px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -98,7 +99,7 @@
     max-width: 180px;
     margin: 0 0 0 auto;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 28px;
     text-align: right;
   }
 
@@ -118,7 +119,8 @@
 
   .example__title-wrapper {
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 76px;
+    padding-top: 0;
     margin: 0;
     background-color: #ffffff;
   }
@@ -138,12 +140,12 @@
 
   .example__wrapper {
     width: 440px;
-    padding: 75px 0;
+    padding: 72px 0 40px 0;
     margin: 0;
   }
 
   .example__text {
-    margin-bottom: 60px;
+    margin-bottom: 66px;
   }
 
   .example__features-wrapper {
@@ -156,12 +158,12 @@
     justify-content: space-between;
     margin-top: 60px;
     margin-left: 0;
-    width: 325px;
-    max-width: 325px;
+    width: 328px;
+    max-width: none;
   }
 
   .example__slider {
     margin: 0;
-    width: 650px;
+    width: 780px;
   }
 }
