@@ -46,6 +46,7 @@
 }
 
 .product-card__name {
+  display: block;
   width: 80px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -53,6 +54,7 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+  text-decoration: none;
   padding: 0;
   margin: 20px 0 15px 0;
 }
