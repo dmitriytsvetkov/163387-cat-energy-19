@@ -16,13 +16,13 @@ navToggle.addEventListener('click', function () {
 })
 
 for (var i = 0; i < catalogBtn.length; i++) {
-  catalogBtn[i].addEventListener("click", function openPopup(evt) {
+  catalogBtn[i].addEventListener('click', function openPopup(evt) {
     evt.preventDefault();
-    alert("Модальное окно");
+    alert('Модальное окно');
   })
 }
 
-showMoreBtn.addEventListener("click", function getProducts(evt) {
+showMoreBtn.addEventListener('click', function getProducts(evt) {
   evt.preventDefault();
-  alert("Ajax загрузка товаров");
+  alert('Ajax загрузка товаров');
 })
