@@ -49,7 +49,10 @@
   .page-header__img-container {
     width: 173px;
     height: 60px;
+    padding: 0;
     margin: 0;
+    display: block;
+    border: none;
   }
 
   .page-header__img-container:hover {

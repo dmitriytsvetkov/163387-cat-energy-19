@@ -9,6 +9,20 @@
   position: relative;
 }
 
+.page-footer__map::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  display: block;
+  width: 57px;
+  height: 54px;
+  margin: -39px 0 0 -28px;
+  background-image: url("../../img/map-pin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .page-footer__map-img {
   position: absolute;
   top: 0;
@@ -19,6 +33,15 @@
   background-image: url("../../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+    background-size: 320px auto;
+  }
+}
+
+.page-footer__del-after::after {
+  content: none;
 }
 
 .page-footer__wrapper {
@@ -27,21 +50,18 @@
 }
 
 .page-footer__title {
-  display: flex;
-  align-items: center;
+  display: block;
+  padding-top: 39px;
+  padding-bottom: 27px;
+  text-align: center;
   margin: 0;
-  min-height: 94px;
 }
 
-.page-footer__title img {
-  display: block;
-  margin: 5px auto 0 auto;
-}
 
 .page-footer__copyright {
   display: flex;
   align-items: center;
-  min-height: 78px;
+  padding: 18px 0 18px 0;
 }
 
 .page-footer__social {
@@ -57,20 +77,37 @@
 
   .page-footer__map-img {
     height: 396px;
+
+    background-image: url("../../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.png");
+      background-size: 767px auto;
+    }
+  }
+
+  .page-footer__map::after {
+    width: 120px;
+    height: 106px;
+    margin: -51px 0 0 -60px;
   }
 
   .page-footer__wrapper {
     @include tablet-wrapper-width();
     display: flex;
     justify-content: space-between;
-    min-height: 150px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .page-footer__title {
     min-width: 160px;
+    padding-top: 27px;
+    text-align: left;
   }
 
   .page-footer__title img {
+    height: 28px;
     margin: 0;
   }
 
@@ -90,5 +127,18 @@
 
   .page-footer__map-img {
     height: 400px;
+    background-image: url("../../img/map-pin.png"), url("../../img/bg-map-desktop@1x.png");
+    background-position: 75.8% 150px, center center;
+    background-repeat: no-repeat;
+    background-size: 124px auto, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.png");
+      background-size: 1440px auto;
+    }
+  }
+
+  .page-footer__map::after {
+    display: none;
   }
 }

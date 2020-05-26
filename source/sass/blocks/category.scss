@@ -80,7 +80,7 @@
 .category__link::after {
   position: absolute;
   right: -36px;
-  top: 7px;
+  top: 3px;
   content: "";
   width: 24px;
   height: 11px;
@@ -102,7 +102,7 @@
   .category {
     @include tablet-wrapper-width();
     position: relative;
-    align-items: start;
+    align-items: flex-start;
     min-height: 372px;
     margin-bottom: 30px;
   }
